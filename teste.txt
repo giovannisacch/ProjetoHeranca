@@ -1,0 +1,40 @@
+Revisão C#
+
+Entendendo o c#:
+Esse curso é pra você que já tem uma base de programação com qualquer linguagem(inclusive portugol) entender e consultar como as coisas funcionam no c#
+o objetivo é você conseguir trabalhar sua lógica de programação com exercicios simples e então aprender mais especificidades da linguagem
+Linguagem compilada, tipagem forte e estática
+Criar projeto, Console.WriteLine() e dotnet run
+
+Variáveis e tipos:
+Sintaxe sem atribuir valor
+Sintaxe já com atribuição de valor
+Sintaxe usando var
+var ajuda a não ficar repetitivo
+Não podem ser declaradas sem tipo definido
+Console.ReadLine() com int.parse
+Null
+
+Vetores
+Como criar, atribuir e acessar um vetor
+
+Operadores Lógicos
+Todos retornam um valor lógico
+< > != == <= >=
+&& ||
+Tabela verdade
+
+operaDORES MATEMATICOS
++ - * / %
+
+Estruturas de repetição
+For, while, do while
+
+Estruturas condicionais
+If-else, switch-case
+
+Escopo:
+Dentro das estruturas, if, for, etc...
+
+Métodos:
+Parametros, retorno, modificador de acesso e escopo

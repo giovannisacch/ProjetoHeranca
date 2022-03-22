@@ -1,0 +1,4 @@
+//Criar uma pasta time
+//Dentro dessa pasta vc deve criar 3 classes: Time, Corinthians e Palmeiras
+//Suas classes deverão herdar de Time, Todo time contém Pontos, Hino, e uma lista de nome de Jogadores
+// Todo time deverá ter o metodo JogarClassico, porém para uma de suas classes derivadas(filhas) você deve implementar uma sobescrita(override) 

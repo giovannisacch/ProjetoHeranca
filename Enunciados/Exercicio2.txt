@@ -1,0 +1,22 @@
+// A lanchonete “Quase Três Lanches” está em fase de crescimento em seu delivery e atendimento e pretende expandir seu 
+//funcionamento. Porém, os donos sempre operaram utilizando planilhas do Excel e ferramentas bastante simples, 
+//sendo assim, nenhum sistema personalizado foi criado e você pretende automatizar o trabalho desse estabelecimento.  
+//  Na entrevista com os donos do estabelecimento você começou a questioná-los sobre o funcionamento do estabelecimento. 
+//Alguns detalhes foram surgindo durante a conversa:  
+//Voce devera criar um sistema para abertura de pedidos e pagamentos de uma lanchonete
+// A lanchonete possui 3 itens de venda: pizzas, lanches e salgadinhos. 
+// Seu sistema deve controlar os Pedidos, para todos pedidos precisamos saber o nome do cliente
+//Os Pratos que ele pediu, e devemos calcular o valor e realizar o pagamento, recebendo o valor e calculando troco se necessário
+//Regras: Todo prato deverá ter recheio e o valor, e o comportamento de calcular seu preço
+// Uma Pizza pode ter borda recheada, considere o valor de 30 reais e +10 caso tenha borda recheada
+// Um Salgadinho deverá ter um tipo que pode variar entre "Assado" e "Frito" considere o valor de 7 reais para frito e 6 para assados
+// Um lanche poderá ser duplo, considere o valor de 30 reais e +50% se for duplo
+// Os pedidos serão criados da classe Main
+
+//Classes
+//Pedido: Propriedades: nomeCliente(string), itensConsumidos(array de prato), Valor(double) Metodos: CalcularValor() - Deve atribuir um valor para nossa propriedade Valor
+// e Pagar(Recebe valorPago) deve receber o valor pago, e ver se tem troco de acordo com o valor do pedido
+//Prato:  Propriedaes: Recheio(string) e Valor(double) Metodos: CalcularPreco() Deve calcular o Preco e setar na propriedade valor
+//Pizza: deve herdar de prato Propriedaes:  BordaRecheada(bool) Para calcular o valor da pizza considere 30 reais e +10 caso tenha borda recheada
+//Salgadinho: deve herdar de prato Propriedaes: Tipo(string), tipos devem ser "frito ou assado" Para calcular o valor do Salgadinho considere 7 reais para frito e 6 para assados
+//Lanche:  deve herdar de prato Propriedaes: Duplo(bool) Para calcular o valor do Lanche considere 30 reais e +50% se for duplo

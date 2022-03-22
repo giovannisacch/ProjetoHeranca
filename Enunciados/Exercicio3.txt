@@ -1,0 +1,19 @@
+Exercício 3
+
+Você está desenvolvendo um sistema para uma loja virtual de eletrônicos que vende Celulares, Computadores e video games
+
+Primeiro devemos Cadastrar nosso Usuário.
+
+Todo usuário deve ter nome e e-mail 
+
+Todo produto deve ter: o valor, quantidadeDisponivel e Marca
+
+Video games podem ser vendidos junto a jogos, sabe-se que cada jogo custa 30 reais
+
+A loja virtual deve contar com um carrinho
+
+No carrinho você deve guardar o usuário, os produtosEscolhidos e o valorTotal da compra, por padrão nosso carrinho só poderá guardar até 5 itens.
+
+Dentro do carrinho deve se ter o comportamento de adicionar mais itens
+
+Seu programa deve preencher as informações(dados do usuário, carrinho e produtos de acordo com o input do usuário) - vide vídeo de exemplo
