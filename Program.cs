@@ -21,8 +21,7 @@ namespace ProjetoHeranca
         public static void Main(string[] args)
         {
             var nomes = new List<string>();
-            var idades = new List<int>?();
-
+            var idades = new List<int>();
             var numeros = new List<int>();
             var numerosMaisDez = new List<int>();
             var strings = new List<string>();
