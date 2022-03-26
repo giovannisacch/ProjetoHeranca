@@ -12,15 +12,29 @@ namespace ProjetoHeranca.Escola
                 opcaoContinuar = int.Parse(Console.ReadLine());
                 if (opcaoContinuar == 1)
                 {
-                    Console.WriteLine("Qual o nome do professor?");
-                    var nomeProfessor = Console.ReadLine();
                     Console.WriteLine("Qual a serie?");
                     var serie = Console.ReadLine();
                     var alunos = CadastrarPrimeirosAlunosDaTurma();
-                    salasDeAula.Add(new SalaDeAula(serie, alunos, new List<Professor>()));
+                    var professores = CadastrarPrimeirosProfessoresDaTurma();
+                    salasDeAula.Add(new SalaDeAula(serie, alunos, professores));
                 }
             } while (opcaoContinuar != 2);
             Console.WriteLine($"Voce criou {salasDeAula.Count}");
+        }
+        private List<Professor> CadastrarPrimeirosProfessoresDaTurma(){
+            var continuarAdicionando = 0;
+            Console.WriteLine("Deseja adicionar novos professores? 1= S | 2 = N");
+            continuarAdicionando = int.Parse(Console.ReadLine());
+            var primeirosProfessores = new List<Professor>();
+            while (continuarAdicionando == 1)
+            {
+                Console.WriteLine("Qual a disciplina do professor?");
+                var disciplina = Console.ReadLine();
+                primeirosProfessores.Add(new Professor(CadastrarNovaPessoa(), disciplina));
+                Console.WriteLine("Deseja adicionar novos professores? 1= S | 2 = N");
+                continuarAdicionando = int.Parse(Console.ReadLine());
+            }
+            return primeirosProfessores;
         }
         private List<Aluno> CadastrarPrimeirosAlunosDaTurma()
         {
@@ -30,22 +44,23 @@ namespace ProjetoHeranca.Escola
             var primeirosAlunos = new List<Aluno>();
             while (continuarAdicionando == 1)
             {
-                primeirosAlunos.Add(CadastrarNovoAluno());
+                var pessoa = CadastrarNovaPessoa();
+                primeirosAlunos.Add(new Aluno(pessoa));
                 Console.WriteLine("Deseja adicionar novos alunos? 1= S | 2 = N");
                 continuarAdicionando = int.Parse(Console.ReadLine());
             }
             return primeirosAlunos;
         }
 
-        private Aluno CadastrarNovoAluno()
+        private Pessoa CadastrarNovaPessoa()
         {
-            Console.WriteLine("Qual o nome do aluno? ");
-            var nomeAluno = Console.ReadLine();
-            Console.WriteLine("Qual o CPF do aluno? ");
-            var cpfAluno = Console.ReadLine();
+            Console.WriteLine("Qual o nome? ");
+            var nome = Console.ReadLine();
+            Console.WriteLine("Qual o CPF? ");
+            var cpf = Console.ReadLine();
             Console.WriteLine("Qual a data de nascimento? ");
-            var dataNascimentoAluno = DateTime.Parse(Console.ReadLine());
-            return new Aluno(nomeAluno, dataNascimentoAluno, cpfAluno);
+            var dataNascimento = DateTime.Parse(Console.ReadLine());
+            return new Pessoa(nome, dataNascimento, cpf);
         }
     }
 }

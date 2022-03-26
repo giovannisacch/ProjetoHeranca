@@ -24,7 +24,7 @@ namespace ProjetoHeranca
             //Professor e aluno deverão herdar de uma mesma classe fica a seu critério definir o nome dessa classe
             //Professor além das propriedades em comum com aluno deve ter a propriedade disciplina(referente a disciplina que ele leciona)
             //Uma Sala de Aula pode ter mais de um professor
-            //Você deve evoluir o metódo cadastrar novas turmas para cadastrar um mais professores na sala de aula
+            //Você deve evoluir o metódo cadastrar novas turmas para cadastrar um ou mais professores na sala de aula
             var secretaria = new Secretaria();
             secretaria.CadastrarNovasTurmas();
         }

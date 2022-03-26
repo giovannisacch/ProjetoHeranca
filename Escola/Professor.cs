@@ -7,5 +7,9 @@ namespace ProjetoHeranca.Escola
         {
             Disciplina = disciplina;
         }
+        public Professor(Pessoa pessoa, string disciplina) : base(pessoa.Nome, pessoa.DataDeNascimento, pessoa.CPF)
+        {
+            Disciplina = disciplina;
+        }
     }
 }
