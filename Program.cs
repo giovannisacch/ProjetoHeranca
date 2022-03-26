@@ -12,15 +12,19 @@
 // O Carrinho deve nascer apenas com o usuario e dentro do carrinho deve se ter o comportamento de adicionar mais itens(deve se verificar se há quantidade disponivel) e fecharCompra
 //Para a criação do metódo AdicionarItem voce precisará verificar maior posição sem item do array(para nao adicionar numa posição que já tem item)
 // Seu programa deve preencher as informações(dados do usuário, carrinho e produtos de acordo com o input do usuário) - vide vídeo de exemplo
-using ProjetoHeranca.Animais;
 using ProjetoHeranca.Escola;
-using ProjetoHeranca.LojaVirtual;
 namespace ProjetoHeranca
 {
     class Program
     {
         public static void Main(string[] args)
         {
+            //Criar classe professor
+            //Aproveitar comportamentos e propriedades em comum com aluno, professor não deve herdar direto de aluno
+            //Professor e aluno deverão herdar de uma mesma classe fica a seu critério definir o nome dessa classe
+            //Professor além das propriedades em comum com aluno deve ter a propriedade disciplina(referente a disciplina que ele leciona)
+            //Uma Sala de Aula pode ter mais de um professor
+            //Você deve evoluir o metódo cadastrar novas turmas para cadastrar um mais professores na sala de aula
             var secretaria = new Secretaria();
             secretaria.CadastrarNovasTurmas();
         }

@@ -17,7 +17,7 @@ namespace ProjetoHeranca.Escola
                     Console.WriteLine("Qual a serie?");
                     var serie = Console.ReadLine();
                     var alunos = CadastrarPrimeirosAlunosDaTurma();
-                    salasDeAula.Add(new SalaDeAula(serie, alunos, nomeProfessor));
+                    salasDeAula.Add(new SalaDeAula(serie, alunos, new List<Professor>()));
                 }
             } while (opcaoContinuar != 2);
             Console.WriteLine($"Voce criou {salasDeAula.Count}");
